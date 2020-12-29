@@ -1,5 +1,8 @@
 package com.example.guigu3;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * @author wxl
  */
@@ -7,7 +10,9 @@ public class ReenterLockDemo {
     static Object object = new Object();
 
     public static void main(String[] args) {
-        m1();
+        List<Integer> list = Arrays.asList(1, 12, 13, 231);
+        boolean contains = list.contains(4);
+        System.out.println(contains);
     }
 
     public static void m1() {
