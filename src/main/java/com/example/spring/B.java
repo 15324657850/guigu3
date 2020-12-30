@@ -1,13 +1,26 @@
 package com.example.spring;
 
-import lombok.AllArgsConstructor;
-import org.springframework.stereotype.Component;
-
 /**
  * @author wxl
  */
-@AllArgsConstructor
-@Component
+
+
 public class B {
-    private  A a;
+    private A a;
+
+    public A getA() {
+        return a;
+    }
+
+    public void setA(A a) {
+        this.a = a;
+    }
+
+
+    public B() {
+        System.out.println("---B created success");
+
+    }
 }
+
+

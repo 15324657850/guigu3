@@ -8,6 +8,7 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class AQSDemo {
     public static void main(String[] args) {
+
         ReentrantLock lock = new ReentrantLock();
         //第一个顾客
         new Thread(() -> {
@@ -51,5 +52,7 @@ public class AQSDemo {
                 lock.unlock();
             }
         }, "C").start();
+
+
     }
 }
